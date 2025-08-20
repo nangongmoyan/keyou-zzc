@@ -7,8 +7,8 @@ import {
   nextTick,
   noop,
   Observer,
-} from '@legoo/helper';
-import {useObserver} from '@legoo/hooks';
+} from '@keyou-zzc/helper';
+import {useObserver} from '@keyou-zzc/hooks';
 import {navigationRef} from '../provider/provider';
 import {PortalProvider} from './context';
 import React from 'react';

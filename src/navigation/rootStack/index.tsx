@@ -3,7 +3,7 @@ import {
   NativeStackNavigationOptions,
 } from '@react-navigation/native-stack';
 import {ScreenNames} from '@helper/sceenNames';
-import {withPortalStack, NavBar} from '@legoo/headless';
+import {withPortalStack, NavBar} from '@keyou-zzc/headless';
 import {Keyboard, StatusBar} from 'react-native';
 import React, {useEffect} from 'react';
 import Preview from '@screens/preview';

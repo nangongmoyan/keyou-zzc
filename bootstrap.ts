@@ -1,5 +1,5 @@
-import {init, Direction} from '@legoo/screen-adaption';
-import {normalization} from '@legoo/headless';
+import {init, Direction} from '@keyou-zzc/screen-adaption';
+import {normalization} from '@keyou-zzc/headless';
 
 normalization(['ios', 'android']);
 

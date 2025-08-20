@@ -1,5 +1,5 @@
 import {Text} from 'react-native';
-import {useEvent} from '@legoo/hooks';
+import {useEvent} from '@keyou-zzc/hooks';
 import React, {useMemo} from 'react';
 
 export interface ITextWithLinkProps {

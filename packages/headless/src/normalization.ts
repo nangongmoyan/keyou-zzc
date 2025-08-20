@@ -1,7 +1,7 @@
 import {useUnstableNativeVariable} from 'react-native-css-interop';
 import {Platform, Text as RNText, TextInput as RNTextInput} from 'react-native';
-import {variableToColor} from '@legoo/helper';
-import {TextInput as TCTextInput} from '@legoo/treasure-chest';
+import {variableToColor} from '@keyou-zzc/helper';
+import {TextInput as TCTextInput} from '@keyou-zzc/treasure-chest';
 import React from 'react';
 
 function setTextNormalizationStyle(Component: React.ComponentType) {

@@ -9,7 +9,7 @@ export {
 export { default as TextInput } from './components/restrictedTextInput/rnlib/TextInput.js';
 
 const LINKING_ERROR =
-  `The package '@legoo/treasure-chest' doesn't seem to be linked. Make sure: \n\n` +
+  `The package '@keyou-zzc/treasure-chest' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';

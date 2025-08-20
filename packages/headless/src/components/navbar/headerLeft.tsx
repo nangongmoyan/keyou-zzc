@@ -3,7 +3,7 @@ import {View} from 'react-native';
 import {ChevronLeft} from 'lucide-react-native';
 import {cssInterop} from 'nativewind';
 import {useUnstableNativeVariable} from 'react-native-css-interop';
-import {variableToColor} from '@legoo/helper';
+import {variableToColor} from '@keyou-zzc/helper';
 import React from 'react';
 import Button from '../button/button';
 

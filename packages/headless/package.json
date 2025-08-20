@@ -1,6 +1,6 @@
 {
-  "name": "@legoo/headless",
-  "version": "0.0.16",
+  "name": "@keyou-zzc/headless",
+  "version": "0.0.1",
   "description": "react-native headless component",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,9 +24,9 @@
   "license": "ISC",
   "dependencies": {
     "@gorhom/bottom-sheet": "^4.6.0",
-    "@legoo/helper": "workspace:*",
-    "@legoo/hooks": "workspace:*",
-    "@legoo/treasure-chest": "workspace:*",
+    "@keyou-zzc/helper": "workspace:*",
+    "@keyou-zzc/hooks": "workspace:*",
+    "@keyou-zzc/treasure-chest": "workspace:*",
     "@react-navigation/native": "^6.1.16",
     "class-variance-authority": "^0.7.0",
     "nativewind": "^4.0.36",

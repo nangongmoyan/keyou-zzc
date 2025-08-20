@@ -1,17 +1,17 @@
-# @legoo/treasure-chest
+# @keyou-zzc/treasure-chest
 
 treasure-chest
 
 ## Installation
 
 ```sh
-npm install @legoo/treasure-chest
+npm install @keyou-zzc/treasure-chest
 ```
 
 ## Usage
 
 ```js
-import { multiply } from '@legoo/treasure-chest';
+import { multiply } from '@keyou-zzc/treasure-chest';
 
 // ...
 

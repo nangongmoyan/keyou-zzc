@@ -2,7 +2,7 @@ module.exports = {
   presets: ['module:@react-native/babel-preset', 'nativewind/babel'],
   plugins: [
     [
-      '@legoo/screen-adaption/babel',
+      '@keyou-zzc/screen-adaption/babel',
       {
         include: ['*.tsx', 'src/**/*.tsx'], // , 'packages/**/*.js'
         nativewindcss: 'global.css',

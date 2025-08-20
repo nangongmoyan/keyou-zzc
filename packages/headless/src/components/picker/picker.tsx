@@ -1,7 +1,7 @@
 import type {IPickerProps, PickerStatus, WrapItem} from './type';
 import {Platform, View} from 'react-native';
-import {isNil, last, DoubleLinkList, serial} from '@legoo/helper';
-import {useEvent, useNextEffect} from '@legoo/hooks';
+import {isNil, last, DoubleLinkList, serial} from '@keyou-zzc/helper';
+import {useEvent, useNextEffect} from '@keyou-zzc/hooks';
 import {Gesture, GestureDetector} from 'react-native-gesture-handler';
 import React, {
   type ForwardRefRenderFunction,

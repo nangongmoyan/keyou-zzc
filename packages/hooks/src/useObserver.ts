@@ -1,4 +1,4 @@
-import {Observable} from '@legoo/helper';
+import {Observable} from '@keyou-zzc/helper';
 import {useCallback, useEffect, useState} from 'react';
 
 export const useObserver = <T extends object>(

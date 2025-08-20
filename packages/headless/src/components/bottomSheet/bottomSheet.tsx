@@ -4,7 +4,7 @@ import {
   ScrollView,
 } from 'react-native-gesture-handler';
 import {LayoutChangeEvent, View} from 'react-native';
-import {usePortalContext} from '@legoo/headless';
+import {usePortalContext} from '@keyou-zzc/headless';
 import {cx} from 'class-variance-authority';
 import Reanimated, {
   type WithSpringConfig,
@@ -28,7 +28,7 @@ import React, {
   useMemo,
   useRef,
 } from 'react';
-import {last} from '@legoo/helper';
+import {last} from '@keyou-zzc/helper';
 
 const AnimatedScrollView = Reanimated.createAnimatedComponent(ScrollView);
 

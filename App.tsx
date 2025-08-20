@@ -5,7 +5,7 @@
  * @format
  */
 import './global.css';
-import {AppProvider} from '@legoo/headless';
+import {AppProvider} from '@keyou-zzc/headless';
 import React from 'react';
 import RootStack from './src/navigation/rootStack';
 

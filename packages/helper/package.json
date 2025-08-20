@@ -1,6 +1,6 @@
 {
-  "name": "@legoo/helper",
-  "version": "0.0.4",
+  "name": "@keyou-zzc/helper",
+  "version": "0.0.1",
   "description": "Universal helper library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +22,7 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "@legoo/hooks": "workspace:^",
+    "@keyou-zzc/hooks": "workspace:^",
     "dayjs": "^1.11.10",
     "decimal.js-light": "^2.5.1",
     "eventemitter3": "^5.0.1",

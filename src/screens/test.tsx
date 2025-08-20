@@ -11,8 +11,8 @@ import {
   pushPortalScreen,
   DatePicker,
   usePortalContext,
-} from '@legoo/headless';
-import {AmountInput} from '@legoo/treasure-chest';
+} from '@keyou-zzc/headless';
+import {AmountInput} from '@keyou-zzc/treasure-chest';
 import {ScreenNames} from '@helper/sceenNames';
 import React, {memo, useRef} from 'react';
 import BottomSheet from './bottomsheet';

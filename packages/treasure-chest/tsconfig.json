@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@legoo/treasure-chest": ["./src/index"]
+      "@keyou-zzc/treasure-chest": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

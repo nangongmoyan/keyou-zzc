@@ -1,3 +1,11 @@
+/*
+ * @Description  : 
+ * @Author       : nangongmoyan
+ * @Date         : 2025-08-20 22:06:26
+ * @LastEditors  : nangongmoyan
+ * @LastEditTime : 2025-08-20 23:27:44
+ * @FilePath     : /packages/headless/src/components/layout/layout.tsx
+ */
 import {
   KeyboardAvoidingView,
   KeyboardAwareScrollView,
@@ -5,7 +13,7 @@ import {
 import {StatusBarProps, View} from 'react-native';
 import {useIsFocused} from '@react-navigation/native';
 import {cx} from 'class-variance-authority';
-import {useStatusBar} from '@legoo/hooks';
+import {useStatusBar} from '@keyou-zzc/hooks';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import React, {
   type ForwardRefRenderFunction,
@@ -27,7 +35,7 @@ interface LayoutPropsBase {
 
 interface LayoutPropsAvoiding
   extends LayoutPropsBase,
-    React.ComponentProps<typeof KeyboardAvoidingView> {
+    React.ComponentProps<any> {
   children: React.ReactNode;
   avoiding?: true;
 }

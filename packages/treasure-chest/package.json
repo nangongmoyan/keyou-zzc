@@ -1,5 +1,5 @@
 {
-  "name": "@legoo/treasure-chest",
+  "name": "@keyou-zzc/treasure-chest",
   "version": "0.0.1",
   "description": "treasure-chest",
   "main": "lib/commonjs/index",
@@ -25,7 +25,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace @legoo/treasure-chest-example",
+    "example": "yarn workspace @keyou-zzc/treasure-chest-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -80,7 +80,7 @@
     "react-native-builder-bob": "^0.20.0",
     "release-it": "^15.0.0",
     "turbo": "^1.10.7",
-    "typescript": "^5.0.2"
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
     "react": "*",
@@ -89,7 +89,7 @@
   "workspaces": [
     "example"
   ],
-  "packageManager": "yarn@3.6.1",
+"packageManager": "pnpm@8.15.8",
   "engines": {
     "node": ">= 18.0.0"
   },

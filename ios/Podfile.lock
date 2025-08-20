@@ -1168,7 +1168,7 @@ DEPENDENCIES:
   - FlipperKit/SKIOSNetworkPlugin (= 0.201.0)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
-  - "legoo-treasure-chest (from `../node_modules/@legoo/treasure-chest`)"
+  - "legoo-treasure-chest (from `../node_modules/@keyou-zzc/treasure-chest`)"
   - libevent (~> 2.1.12)
   - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
@@ -1255,7 +1255,7 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2023-11-17-RNv0.73.0-21043a3fc062be445e56a2c10ecd8be028dd9cc5
   legoo-treasure-chest:
-    :path: "../node_modules/@legoo/treasure-chest"
+    :path: "../node_modules/@keyou-zzc/treasure-chest"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:

@@ -7,7 +7,7 @@ import React, {
   memo,
   useMemo,
 } from 'react';
-import {useEvent} from '@legoo/hooks';
+import {useEvent} from '@keyou-zzc/hooks';
 
 const buttonVariants = cva(
   'inline-flex items-center justify-center rounded-md font-medium focus-visible:outline-none',
