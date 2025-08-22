@@ -1,6 +1,6 @@
 {
   "name": "@keyou-zzc/hooks",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "Universal react-native hooks library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,7 @@
     "build:types": "tsc --emitDeclarationOnly --declaration",
     "watch": "rimraf dist && concurrently -n w: npm:watch:*",
     "watch:source": "swc src --ignore **/*.d.ts -d dist -w -q",
-    "watch:types": "tsc --watch --emitDeclarationOnly --declaration"
+    "watch:types": "tsc --watch --emitDeclarationOnly --declaraton"
   },
   "author": "Soul Shao <a1009943858@gmail.com> (https://github.com/JinYuSha0)",
   "source": "src/index",

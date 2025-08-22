@@ -37,7 +37,7 @@ const containerVariants = cva(
 );
 
 const inputTextVariantes = cva(
-  'flex-1 text-sm placeholder:text-muted-foreground',
+  'flex-1 text-sm placeholder:text-muted-foreground leading-none',
   {
     variants: {
       variant: {

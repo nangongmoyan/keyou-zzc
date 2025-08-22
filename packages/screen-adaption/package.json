@@ -1,6 +1,6 @@
 {
   "name": "@keyou-zzc/screen-adaption",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "babel plugin for react-native screen adaptation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,7 +27,7 @@
     "@babel/types": "^7.23.6",
     "classnames": "^2.5.1",
     "micromatch": "^4.0.5",
-    "react-native": "^0.73.2"
+    "react-native": "0.77.0"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.63",

@@ -1,5 +1,5 @@
-import {BackHandler} from 'react-native';
-import {useEffect} from 'react';
+import { BackHandler } from 'react-native';
+import { useEffect } from 'react';
 
 export const useHardwareBackPress = (
   enabled: boolean,
@@ -7,9 +7,14 @@ export const useHardwareBackPress = (
 ) => {
   useEffect(() => {
     if (!enabled) return;
-    BackHandler.addEventListener('hardwareBackPress', callback);
+
+    const subscription = BackHandler.addEventListener(
+      'hardwareBackPress',
+      callback
+    );
+
     return () => {
-      BackHandler.removeEventListener('hardwareBackPress', callback);
+      subscription.remove(); // 使用 subscription.remove() 而不是 removeEventListener
     };
   }, [enabled, callback]);
 };

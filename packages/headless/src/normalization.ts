@@ -1,7 +1,7 @@
-import {useUnstableNativeVariable} from 'react-native-css-interop';
-import {Platform, Text as RNText, TextInput as RNTextInput} from 'react-native';
-import {variableToColor} from '@keyou-zzc/helper';
-import {TextInput as TCTextInput} from '@keyou-zzc/treasure-chest';
+import { useUnstableNativeVariable } from 'react-native-css-interop';
+import { Platform, Text as RNText, TextInput as RNTextInput } from 'react-native';
+import { variableToColor } from '@keyou-zzc/helper';
+import { TextInput as TCTextInput } from '@keyou-zzc/treasure-chest';
 import React from 'react';
 
 function setTextNormalizationStyle(Component: React.ComponentType) {
@@ -19,26 +19,38 @@ function setTextNormalizationStyle(Component: React.ComponentType) {
   Text.render = function (...args) {
     const origin = oldTextRender.call(this, ...args);
 
-    const textColor = variableToColor(
-      useUnstableNativeVariable('--foreground'),
-    );
+    const textColor = variableToColor(useUnstableNativeVariable('--foreground'));
 
-    // RCTVirtualText is being used for LogBox while RCTText is being used for normal text
-    if (origin.type === 'RCTVirtualText') {
-      return origin;
-    }
+    if (origin.type === 'RCTVirtualText') return origin;
 
     const children = origin.props.children;
-    if (typeof children === 'object') {
+
+    const cloneWithColor = (child: React.ReactNode) => {
+      if (React.isValidElement(child)) {
+        return React.cloneElement(child as React.ReactElement<any>, {
+          style: [{ color: textColor }, (child.props as any).style],
+        });
+      }
+      return child;
+    };
+
+    if (Array.isArray(children)) {
+      const newChildren = children.map(cloneWithColor);
       return React.cloneElement(origin, {
-        children: React.cloneElement(children, {
-          style: [{color: textColor}, children.props.style],
-        }),
+        children: newChildren,
+        style: [{ color: textColor }, origin.props.style],
+      });
+    }
+
+    if (React.isValidElement(children)) {
+      return React.cloneElement(origin, {
+        children: cloneWithColor(children),
+        style: [{ color: textColor }, origin.props.style],
       });
     }
 
     return React.cloneElement(origin, {
-      style: [{color: textColor}, origin.props.style],
+      style: [{ color: textColor }, origin.props.style],
     });
   };
 }
@@ -57,12 +69,8 @@ function setTextInputNormalizationStyle(Component: React.ComponentType) {
 
   TextInput.render = function (...args) {
     const origin = oldTextInputRender.call(this, ...args);
-
-    const textColor = variableToColor(
-      useUnstableNativeVariable('--foreground'),
-    );
-
-    const defaultStyle = {color: textColor, allowFontScaling: false};
+    const textColor = variableToColor(useUnstableNativeVariable('--foreground'));
+    const defaultStyle = { color: textColor, allowFontScaling: false };
 
     return React.cloneElement(origin, {
       style: [defaultStyle, origin.props.style],
